@@ -1,15 +1,14 @@
 name: x86_64
 
-
 on:
   push:
     branches: [ master ]
   pull_request:
-   #branches: [ master ]
+   branches: [ master ]
   watch:
     types: started
-  #schedule:
-    #- cron:  '0 0 28-31 * *'
+  schedule:
+    - cron:  '0 0 28-31 * *'
 
 jobs:
   build:
